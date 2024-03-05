@@ -1,0 +1,480 @@
+.offer{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    height: 40px;
+    cursor: pointer;
+   
+}
+
+.close{
+    display: none;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar__description{
+    display: flex;
+    gap: 80px;
+}
+.navbar__description a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+
+.navbar__description a:hover{
+  text-decoration: underline;
+}
+
+.sidenavbar{
+    background-color: #1D232C;
+    width: 50%;
+    position: absolute;
+    top: 0%;
+    left: -50%;
+    height:100%;
+    transition: all;
+    transition-duration: 2s;
+    z-index: 10;
+}
+.sidenavbar__description{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 20px;
+   
+}
+.sidenavbar__description a{
+    text-decoration:none;
+    color: white;
+}
+
+.sidenavbar__description a:hover{
+    text-decoration: underline;
+}
+
+/* slider */
+
+.slider{
+    border: solid 1px black;
+    display: flex;
+    position: relative; 
+    width: 100%; 
+    overflow: hidden;  
+}
+
+.slider-image-container{
+    display: flex;
+    transition: 2s;
+}
+
+.slider-image{
+    width: 100vw;
+}
+
+.slider-left-button{
+    position: absolute;
+    top: 40%;
+    left: 2%;
+}
+
+.shop{
+    padding: 10px;
+}
+
+.slider-content{
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-size:50px;
+    top: 10%;
+    left: 10%;
+}
+
+.slider-right-button{
+    position: absolute;
+    top: 40%;
+    left: 90%;
+}
+
+/* brand */
+.brands{
+    margin-top: 100px;
+}
+.brands__description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bran__symblols img{
+    width: 60px;
+}
+.brands__description p{
+    font-size:xx-large;
+}
+
+/* service */
+.service{
+    margin-top: 10px;
+}
+.service__title{
+    display: flex;
+    justify-content: space-between;
+}
+.service__description{
+    display: flex;
+    gap: 10px;
+}
+
+.service__description div{
+    background-color:  #F2F4F7;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* new arrivals */
+.newarrivals__dress{
+    width: 20vw;
+    height: 20vw;
+    position: relative;
+    background-color: #1D232C;
+    border-radius: 5px;
+
+}
+
+.newarrivals__collection{
+    display: flex;
+    gap: 6%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.newarrivals__collection::-webkit-scrollbar{
+    display: none;
+}
+
+.newarrivals__dress img{
+    flex-basis: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-color: #1D232C;
+}
+
+.newarrivals__button button{
+    position: absolute;
+    border-radius: 10px;
+    padding:20px 35px 20px 35px;
+    top: 10vw;
+    left: 5vw;
+    border: none;
+}
+
+/* mostwanted */
+.mostwanted__collections{
+    display: flex;
+    gap: 6vw;
+    overflow: scroll;
+}
+.mostwanted__collections::-webkit-scrollbar{
+    display: none;
+}
+
+.most-wanted-container{
+    position: relative;
+}
+
+.sale-overlay{
+    position: absolute;
+    top: -3vw;
+    padding: 3px;
+    font-size: 3vw;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+}
+
+.like-button{
+    position: absolute;
+    width: 3vw;
+    top: 16vw;
+    left: 16vw;
+}
+
+/* limit-offer */
+.limited-offer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1D232C;
+    color: #E2E1E1;
+    padding: 20px;
+    font-size: 2vw;
+    margin-top: 40px;
+}
+
+.limited-offer img{
+    width: 100%;
+    height: 100%100%;
+}
+
+.limited-offer-text{
+    padding: 5%;
+}
+
+.limited-offer button{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    margin-top: 10px;
+    font-size: 1.2vw;
+    color: #1D232C;
+    border-radius: 10px;
+    border: none;
+ }
+
+ /* input */
+ .input button{
+    margin-top: 10px;
+    font-size: 1.8vw;
+    color: #E2E1E1;
+    background-color: #1D232C;
+    border-radius: 10px;
+    border: none;
+    padding:10px
+ }
+
+ .input h1{
+    font-size: 6vw;
+ }
+ .input h3{
+    font-size: 2.6vw;
+ }
+
+@media screen and (max-width:600px){
+    .offer{
+        font-size: 8px;
+        height: 20px;
+        gap: 50px;
+        position:absolute;
+        top: 0%;
+        width: 100%;
+        right: 0px;
+    }
+
+    .navbar__description{
+        display: none;
+    }
+
+    .slider-content{
+        font-size:15px; 
+        top: 10%;
+        left: 15%;
+    }
+
+    .brands{
+        margin-top: 30px;
+    }
+
+    .brands__description{
+        gap: 20px;
+    }
+    .brands__description img{
+        width: 20px;
+    }
+
+    .brands__description p{
+        font-size: small;
+    }
+
+    .service__title{
+        font-size: 10px;
+    }
+    
+    .service__title h4,p{
+        font-size:10px;
+    }
+    .newarrivals__button button{
+        font-size: 10px;
+        padding: 10px;
+        left: 20px;
+    }
+    
+}
+
+ /* footer */
+ 
+ .icon{
+    width: 40px;
+    margin: 2vw;
+
+}
+.footer{
+    font-size: 2vw;
+    margin-top: 5vw;
+    padding: 40px;
+    background-color: #1D232C;
+    color: #E2E1E1;
+    box-sizing: border-box;
+}
+
+.footer-container{
+   
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-box-1{
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.footer-box-2{
+    display: flex;
+}
+
+@media screen  and (min-width:600px){
+    .navbar__icon{
+        display: none;
+    }
+
+    .sidenavbar{
+        display: none;
+    }
+    
+}
+
+/* contact form */
+
+  .contact-form {
+    background-color: #1D232C;
+    color: #dddddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 60vw;
+    margin: auto;
+    padding: 5vw;
+    padding-right: 10vw;
+    margin-top: 10px;
+  }
+
+  .contact-form h2 {
+    margin-bottom: 1vw;
+   
+  }
+
+  .contact-form label {
+    display: block;
+    margin-bottom: 1vw;
+ 
+  }
+
+  .contact-form input[type="text"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 2vw;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    margin-bottom: 1vw;
+    font-size: 1vw;
+    
+  }
+
+  .contact-form textarea {
+    resize: vertical;
+    height: 10vh;
+  }
+
+  .contact-form input[type="submit"] {
+    
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #0056b3;
+  }
+
+  .contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  /* collections */
+  .divide-section{
+    display: flex;
+   }
+
+   .filter-section{
+    flex-basis: 25%;
+    position: relative;
+    font-size: 2vw;
+   
+    }
+
+    .product-section{
+        flex-basis: 75%;
+        position: relative;
+    }
+
+    .vertical-line {
+        border: none;
+        border-left: 3px solid #1D232C; 
+        height: 100%; 
+        margin: 0 20px;
+        position: absolute;
+        top: 0px;
+        right: 0px
+        
+      }
+
+      
+    .filter-section-price,.filter-section-arrivals,.filter-section-occasion,.filter-section-colors{
+        margin-top: 3vw;
+        margin-bottom: 10px;
+        
+    }
+
+    .product-section{
+       padding: 10px;
+    }
+    .navbar-search{
+        border: solid black 1px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 10px;
+        position: absolute;
+        width: 97%;
+    }
+
+    .navbar-search input{
+        border: none;
+        padding: 10px;
+    }
+
+    .navbar-search input:focus{
+        outline: none;
+    }
+
+
+
+
+
+    .products{
+        margin-top: 10vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size:1vw;
+    }
+
