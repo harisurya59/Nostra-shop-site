@@ -27,9 +27,9 @@ To run the Nostra website locally, follow these steps:
 Clone this repository to your local machine:
 
 bash
-Copy code
+Copy code https://harisurya59.github.io/Nostra-shop-site/
 git clone 
-Navigate to the project directory:
+Navigate to the project directory: cd Nostra-shop-site
 
 bash
 Copy code
